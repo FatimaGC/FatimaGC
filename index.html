@@ -5,22 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fatima's Awesome Website</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <style media="screen">
       body {
+        color: #222222;
         font-family: 'PT Sans', sans-serif;
+        margin: 0;
       }
       img {
         max-width: 100%;
       }
+      h1 {
+        color: #141c3a;
+        font-size: 2rem;
+        margin: 0 0 1.5rem 0;
+      }
+
+      .site-header {
+        margin-bottom: 7rem;
+        margin-top: 7rem;
+        padding-left:1.5rem;
+        padding-right:1.5rem;
+        text-align: center;
+      }
+
+      .site-header__content{
+        font-size: 1.25rem;
+        margin-top: 1.5rem;
+
+      }
+      .intro{
+        background-color: #7510F7;
+        color: #fff;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        padding: 5rem 1.5rem;
+      }
+      @media (min-width:600px) {
+        .intro__content {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 600px;
+        }
+      }
+      .intro__title {
+        line-height: 1;
+      }
     </style>
   </head>
   <body>
-    <h1>My Website</h1>
+    <header class="site-header">
+      <h1>Front-End Developer</h1>
+      <div class="site-header__content">
+        <p>I code beautifully simple things, and I love what I do!</p>
+        <!-- <p><a href="mailto:fguzman1230@gmail.com">Email me</a> if you want to work together!</p> -->
+      </div>
+    </header>
 
-    <p>Welcome to my website, I'm a web developer!</p>
-    <p><a href="mailto:fguzman1230@gmail.com">Email me</a> if you want to work together!</p>
 
-    <img src="./Images/Jax.jpg" alt="My Dog Jax">
+    <!-- <img src="./Images/Jax.jpg" alt="My Dog Jax"> -->
+
+    <section class="intro">
+     <div class="intro__content">
+      <h2 class="intro__title">Hi, I'm Fatima. Nice to meet you.</h2>
+
+      <p>
+        Since beginning my journey as a freelance designer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.
+      </p>
+     </div>
+    </section>
   </body>
 </html>
